@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'homeapp/css/styles.css' %}">
+    <link rel="stylesheet" href="#">
+    <link rel="shortcut icon" type="image/ico" href="{% static 'homeapp/img/logo2.ico' %}" />
+    <title>Boris</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'Home' %}">
+            <img src="{% static 'homeapp/img/logo2.png' %}" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'Home' %}">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item {% if request.path == '/books/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'Books' %}">Books</a>
+                </li>
+                <li class="nav-item {% if request.path == '/photos/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'Photos' %}">Photos</a>
+                </li>
+                <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    {% block content%}
+
+
+    {% endblock %}
+    <!-- agregar footer aca-->
+    <footer>
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 pie media1-md media2-sm">
+                        <h3>Boris</h3>
+                        <p>Urban Explorations Magazine</p>
+                        <img src="{% static 'homeapp/img/logo.png' %}" alt="logo">
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 pie2 media1-md media2-sm">
+                        <h2>Useful links</h2>
+                        <ul>
+                            <li><a href="{% url 'Home' %}">Home</a></li>
+                            <li><a href="{% url 'Books' %}">Books</a></li>
+                            <li><a href="{% url 'Photos' %}">Photos</a></li>
+                            <li><a href="{% url 'Contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 pie3 media1-md media2-sm">
+                        <h2>Follow Us</h2>
+                        <p>Please follow us on our social media.Urban exploration (often shortened as UE, urbex and
+                            sometimes known as roof-and-tunnel hacking)
+                            is the exploration of manmade structures, usually abandoned ruins .</p>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 pie4 media1-md media2-sm margenpie">
+                        <h2>Our Newsletter</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis impedit obcaecati similique.
+                        </p>
+                        <form action="">
+                            <input type="email">
+                            <input type="submit" value="Suscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom-text">All Rights reserved by &copy;Boris Magazine 2021</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

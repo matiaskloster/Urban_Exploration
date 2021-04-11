@@ -1,0 +1,58 @@
+{% extends 'homeapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center mx-auto casa">
+        <div class="col-xs-12 col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'homeapp/img/libro1.png' %}" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Access All Areas</h5>
+                        <p class="card-text">A comprehensive guidebook to urban exploration.</p>
+                        <a href="https://www.amazon.com/-/es/Ninjalicious/dp/0973778709" class="btn btn-primary"
+                            target="_blank">Buy it!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 h-100 d-inline-block">
+            <div class="card" style="width: 18rem;">
+                <div class="card shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'homeapp/img/libro2.png' %}" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Explore everything</h5>
+                        <p class="card-text">Everyday places that need to be rediscovered.</p>
+                        <a href="https://www.amazon.com/-/es/Bradley-Garrett/dp/1781681295/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=explore+everything&qid=1616457225&s=books&sr=1-1"
+                            class="btn btn-primary" target="_blank">Buy it!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 h-100 d-inline-block">
+            <div class="card" style="width: 18rem;">
+                <div class="card shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'homeapp/img/libro3.png' %}" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Haunted places!</h5>
+                        <p class="card-text">Discover the most haunted famous places.</p>
+                        <a href="https://www.amazon.com/-/es/Editors-LIFE-ebook/dp/B07JFL9FY8/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=the+worlds+most+haunted+places&qid=1616457576&s=books&sr=1-2"
+                            class="btn btn-primary" target="_blank">Buy it!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---row--->
+    </div>
+    <!---container--->
+</div>
+
+
+
+{% endblock %}

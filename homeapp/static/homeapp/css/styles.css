@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Mono';
+    src: url('/static/homeapp/fonts/SyneMono-Regular.eot');
+    src: url('/static/homeapp/fonts/SyneMono-Regular.eot?#iefix') format('embedded-opentype'), url('/homeapp/fonts/SyneMono-Regular.woff2') format('woff2'), url('/static/homeapp/fonts/SyneMono-Regular.woff') format('woff'), url('/static/homeapp/fonts/SyneMono-Regular.ttf') format('truetype'), url('/static/homeapp/fonts/SyneMono-Regular.svg#SyneMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("/static/homeapp/img/background.jpg") no-repeat;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++NAVBAR+++++++++++++++++++++++++++++*/
+
+.navbar {
+    background-color: transparent !important;
+}
+
+#navbarNav>ul>li>a {
+    font-family: "Mono";
+    font-weight: bold;
+}
+
+#navbarNav>ul {
+    text-align: center;
+}
+
+.navbar-nav ml-auto {
+    text-align: center;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ HOME +++++++++++++++++++++++++++++*/
+
+.home {
+    position: relative;
+    top: 200px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ BOOKS +++++++++++++++++++++++++++++*/
+
+.casa {
+    position: relative;
+    top: 60px;
+    font-family: "Mono";
+    font-weight: bold;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FORM +++++++++++++++++++++++++++++*/
+
+.backform {
+    position: relative;
+    top: 160px;
+    background: rgb(3, 2, 2);
+    background: -moz-linear-gradient(90deg, rgba(3, 2, 2, 1) 26%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(3, 2, 2, 1) 26%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(3, 2, 2, 1) 26%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030202", endColorstr="#00d4ff", GradientType=1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+}
+
+.backform label {
+    color: white;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++FOOTER+++++++++++++++++++++++++++++*/
+
+.footer-top p {
+    color: white;
+    line-height: 25px;
+    font-family: Mono;
+}
+
+.footer-top h2, h3 {
+    color: white;
+    font-family: Mono;
+}
+
+.footer-top h2 {
+    font-size: 18px;
+}
+
+.footer-top {
+    background: #111;
+    padding: 80px 0;
+    position: relative;
+    top: 370px;
+}
+
+.pie h3 {
+    font-family: Mono;
+    color: white;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.pie2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.pie2 h2::before {
+    content: '|';
+    color: red;
+    padding-right: 10px;
+}
+
+.pie2 ul {
+    list-style: none;
+}
+
+.pie2 ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+.pie2 ul li a {
+    font-family: Mono;
+    color: white;
+}
+
+.pie3 h2 {
+    color: white;
+    font-family: Mono;
+    text-transform: uppercase;
+}
+
+.pie3 h2::before {
+    content: '|';
+    color: red;
+    padding-right: 10px;
+}
+
+.pie3 a {
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.pie3 a i {
+    font-size: 20px;
+    color: white;
+    padding: 10px 12px;
+}
+
+.pie4 h2 {
+    color: white;
+    font-family: Mono;
+    text-transform: uppercase;
+}
+
+.pie4 h2::before {
+    content: '|';
+    color: red;
+    padding-right: 10px;
+}
+
+.pie4 form input[type=submit] {
+    background: grey;
+    font-family: Mono;
+    border: none;
+    padding: 3px 15px;
+    height: 28px;
+    margin-left: -5px;
+    color: white;
+}
+
+.footer-bottom-text {
+    text-align: center;
+    background: #000;
+    line-height: 75px;
+    color: white;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MEDIA +++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .media1-md {
+        margin-bottom: 30px;
+    }
+    .pie4 form input[type=submit] {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .media2-sm {
+        margin-bottom: 30px;
+    }
+    .footer-top {
+        padding: 50px 0;
+    }
+    .navbar-nav {
+        background: rgb(42, 42, 42);
+        background: -moz-radial-gradient(circle, rgba(42, 42, 42, 1) 28%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(42, 42, 42, 1) 28%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
+        background: radial-gradient(circle, rgba(42, 42, 42, 1) 28%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2a2a", endColorstr="#00d4ff", GradientType=1);
+    }
+    #navbarNav ul li a {
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .margenpie form input[type=submit] {
+        margin-left: 0;
+    }
+}
