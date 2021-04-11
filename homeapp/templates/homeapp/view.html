@@ -1,0 +1,18 @@
+{% extends 'homeapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center mx-auto">
+        <div class="col-xl-12">
+            <a href="{% url 'Photos' %}" class="btn btn-dark">Go Back!</a>
+            <div class="vistahtml">
+                <img class="mx-auto d-block" src="{{resuqueryfoto.image.url}}" alt="gato">
+                <p class="text-center">{{resuqueryfoto.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
