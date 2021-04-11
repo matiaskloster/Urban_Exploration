@@ -36,8 +36,8 @@
                 <li class="nav-item {% if request.path == '/photos/' %}active{% endif %}">
                     <a class="nav-link" href="{% url 'Photos' %}">Photos</a>
                 </li>
-                <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
-                    <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
+                <li class="nav-item {% if request.path == '/form/' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'Form' %}">Contact</a>
                 </li>
             </ul>
         </div>
@@ -64,7 +64,7 @@
                             <li><a href="{% url 'Home' %}">Home</a></li>
                             <li><a href="{% url 'Books' %}">Books</a></li>
                             <li><a href="{% url 'Photos' %}">Photos</a></li>
-                            <li><a href="{% url 'Contact' %}">Contact</a></li>
+                            <li><a href="{% url 'Form' %}">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 pie3 media1-md media2-sm">

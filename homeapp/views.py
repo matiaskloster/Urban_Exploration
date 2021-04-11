@@ -12,5 +12,4 @@ def books(request):
     return render(request, "homeapp/books.html")
 
 
-def contact(request):
-    return render(request, "homeapp/contact.html")
+
