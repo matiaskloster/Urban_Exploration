@@ -5,7 +5,7 @@
 {% block content %}
 
 <div class="container">
-    <div class="row ">
+    <div class="row position">
         {% for resu in resuqueryfotos %}
 
         <div class="col-sm-12 col-lg-4 col-md-6">
@@ -14,7 +14,7 @@
                 <div class="card-body text-center">
                     <p>{{resu.title}}</p>
                 </div>
-                <a class="btn btn-outline-dark btn-sm" href="{% url 'View' resu.id %}">View</a>
+                <a class="btn btn-outline-dark btn-sm button" href="{% url 'View' resu.id %}">View</a>
             </div>
         </div>
         {% endfor %}

@@ -53,12 +53,19 @@ body {
     margin-bottom: 30px;
 }
 
-/*++++Photos++++++++++++++*/
+/*++++Photos++++++++******************************************************************++++++*/
 
 .vistahtml img {
     height: 75vh;
     max-width: 100%;
     max-height: 100%;
+}
+
+.vistahtml p {
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+    font-family: "Mono";
 }
 
 .img2 img {
@@ -71,23 +78,38 @@ body {
     top: 100px;
 }
 
+.button {
+    outline: none;
+    border: none;
+}
+
+.position {
+    margin-top: 40px;
+    margin-bottom: -250px;
+}
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FORM +++++++++++++++++++++++++++++*/
 
 .backform {
     position: relative;
-    top: 160px;
+    top: 80px;
     background: rgb(3, 2, 2);
     background: -moz-linear-gradient(90deg, rgba(3, 2, 2, 1) 26%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(3, 2, 2, 1) 26%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
     background: linear-gradient(90deg, rgba(3, 2, 2, 1) 26%, rgba(214, 210, 209, 0.9864320728291317) 100%, rgba(0, 212, 255, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030202", endColorstr="#00d4ff", GradientType=1);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 18px;
+    border-radius: 5px;
     box-shadow: 0px 0px 10px;
 }
 
 .backform label {
     color: white;
+}
+
+.botcolor {
+    background: red;
+    border: none;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++FOOTER+++++++++++++++++++++++++++++*/
@@ -111,7 +133,7 @@ body {
     background: #111;
     padding: 80px 0;
     position: relative;
-    top: 370px;
+    top: 399px;
 }
 
 .pie h3 {
