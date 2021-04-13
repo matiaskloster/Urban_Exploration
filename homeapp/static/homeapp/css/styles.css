@@ -47,9 +47,28 @@ body {
 
 .casa {
     position: relative;
-    top: 60px;
+    top: 100px;
     font-family: "Mono";
     font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*++++Photos++++++++++++++*/
+
+.vistahtml img {
+    height: 75vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img2 img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.buttonview {
+    position: relative;
+    top: 100px;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FORM +++++++++++++++++++++++++++++*/
@@ -248,17 +267,4 @@ body {
     .margenpie form input[type=submit] {
         margin-left: 0;
     }
-}
-
-/*++++fot++++++++++++++*/
-
-.vistahtml img {
-    height: 75vh;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.img2 img {
-    height: 250px;
-    object-fit: cover;
 }

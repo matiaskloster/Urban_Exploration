@@ -4,20 +4,23 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row mt-4 ">
+<div class="container">
+    <div class="row ">
         {% for resu in resuqueryfotos %}
-        <div class="col-sm-12 col-lg-4 col-md-6 ">
-            <div class="card my-2 img2" style="width: 30rem;">
+
+        <div class="col-sm-12 col-lg-4 col-md-6">
+            <div class="card my-5 img2" style="width: 20rem; height: 20rem;">
                 <img class="card-img-top img2" src="{{resu.image.url}}" alt="Card image cap">
                 <div class="card-body text-center">
                     <p>{{resu.title}}</p>
                 </div>
-                <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'View' resu.id %}">View</a>
+                <a class="btn btn-outline-dark btn-sm" href="{% url 'View' resu.id %}">View</a>
             </div>
         </div>
         {% endfor %}
+
     </div>
+    <!--row-->
 </div>
 
 {% endblock %}
