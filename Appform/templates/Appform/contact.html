@@ -4,9 +4,20 @@
 <form action="#" method="post">
     {% csrf_token %}
     <div class="container">
+
         <div class="row">
+
             <div class="col-12 col-sm-12 col-md-10 col-lg-6 mx-auto">
+
                 <div class="backform">
+                    {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                        <li class="{{ message.tags }}">{{ message }}</li>
+
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
                     <div class="form-group">
                         <label for="name">Name</label> {{form.name}}
                     </div>

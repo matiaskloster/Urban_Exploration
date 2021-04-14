@@ -112,6 +112,17 @@ body {
     border: none;
 }
 
+.success {
+    color: white;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+    font-family: "Mono";
+    color: red;
+    background-color: black;
+    box-shadow: yellow;
+}
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++FOOTER+++++++++++++++++++++++++++++*/
 
 .footer-top p {
