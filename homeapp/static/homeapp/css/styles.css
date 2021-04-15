@@ -237,6 +237,11 @@ body {
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MEDIA +++++++++++++++++++++++++++++*/
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        background: url("/static/homeapp/img/background.jpg");
+        background-size: cover;
+        height: 600px;
+    }
     #navbarNav>ul {
         background: black;
     }
@@ -265,7 +270,26 @@ body {
         margin-top: -36px;
         margin-right: 1px;
     }
+    .img2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cardrespo {
+        margin-bottom: -25px;
+    }
+    .footer-top {
+        position: relative;
+        top: 310px;
+        z-index: -1;
+    }
+    .footer-bottom-text {
+        position: relative;
+        top: 250px;
+    }
 }
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .media1-md {
@@ -285,16 +309,33 @@ body {
         margin-left: -16px;
         margin-right: -16px;
     }
+    .book3 {
+        position: relative;
+        top: 50px;
+    }
+    .backform {
+        margin-top: 10%;
+    }
 }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .media2-sm {
         margin-bottom: 30px;
     }
     .footer-top {
+        margin-top: -8%;
         padding: 50px 0;
     }
+    .img2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .margenpie form input[type=submit] {
