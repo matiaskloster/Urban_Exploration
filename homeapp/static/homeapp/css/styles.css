@@ -245,6 +245,16 @@ body {
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MEDIA +++++++++++++++++++++++++++++*/
 
 @media only screen and (min-width: 360px) and (max-width: 575px) {
+    body {
+        background: url("/static/homeapp/img/background.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .homephoto {
+        margin-bottom: 52px;
+    }
     #navbarNav>ul {
         background: black;
     }
@@ -268,22 +278,43 @@ body {
     }
     .vistahtml img {
         margin-top: 111px !important;
+        height: 50vh;
     }
     .footer-top {
         background: #111;
         padding: 21px 0;
         position: relative;
-        top: 352px;
+        top: 393px;
     }
     .footer-bottom-text {
         text-align: center;
         background: #000;
         line-height: 75px;
         color: white;
-        margin-top: 351px;
+        margin-top: 219px;
         margin-bottom: 0;
     }
+    .pie2 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie3 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie4 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
 }
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++............................++++++++++*/
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     body {
@@ -294,7 +325,7 @@ body {
         background-size: cover;
     }
     .homephoto {
-        margin-top: 87px;
+        margin-top: 17px;
     }
     #navbarNav>ul {
         background: black;
@@ -335,21 +366,46 @@ body {
         margin-bottom: 0;
     }
     .buttonview {
-        background: white;
-        color: black;
+        background: black;
+        color: white;
     }
     .title {
-        color: white;
+        color: black;
     }
     .vistahtml img {
         margin-top: 111px !important;
+        height: 50vh;
     }
     .backform {
         margin: auto;
-        margin-top: 126px;
+        margin-top: 181px;
     }
     body>footer>div>div>div>div.col-md-3.col-sm-6.col-xs-12.pie4.media1-md.media2-sm.margenpie>form>input[type=submit]:nth-child(2) {
         margin-left: 1px;
+    }
+    .pie2 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie2 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie3 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie4 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
     }
 }
 
@@ -377,7 +433,7 @@ body {
         margin-top: 68px;
     }
     .title {
-        color: white;
+        color: black;
     }
     .book3 {
         position: relative;
@@ -387,16 +443,39 @@ body {
         margin-left: 18px !important;
     }
     .buttonview {
-        background: white;
-        color: black;
-        margin-left: 28px;
+        background: black;
+        color: white;
+        margin-left: -1px;
     }
     .vistahtml img {
         margin-top: 120px !important;
+        height: 70vh;
     }
     .backform {
         margin-top: 126px;
         margin-bottom: -150px;
+    }
+    .footer-top {
+        position: relative;
+        top: 395px;
+    }
+    .pie2 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie3 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie4 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
     }
 }
 
@@ -405,6 +484,10 @@ body {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     * {
         margin: 0;
+    }
+    .homephoto {
+        margin-top: -9px;
+        margin-bottom: 118px;
     }
     .media2-sm {
         margin-bottom: 30px;
@@ -420,10 +503,37 @@ body {
         margin-top: 78px;
     }
     .title {
+        color: black;
+    }
+    .buttonview {
+        background: black;
         color: white;
+        margin-left: 73px;
     }
     body>footer>div>div>div>div.col-md-3.col-sm-6.col-xs-12.pie4.media1-md.media2-sm.margenpie>form>input[type=submit]:nth-child(2) {
         margin-left: 1px;
+    }
+    .vistahtml img {
+        margin-top: 120px !important;
+        height: 70vh;
+    }
+    .pie2 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie3 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
+    }
+    .pie4 h2::before {
+        content: '|';
+        color: red;
+        padding-right: 3px;
+        margin-left: -6px;
     }
 }
 
